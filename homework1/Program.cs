@@ -1,4 +1,5 @@
 ﻿// Найти точку пересечения двух прямых заданных уравнением y = k1 * x + b1, y = k2 * x + b2, b1 k1 и b2 и k2 заданы
+
 using System.Globalization;
 IFormatProvider formatter = new NumberFormatInfo { NumberDecimalSeparator = "." };// для ввода данных через точку или запятую
 Console.OutputEncoding = System.Text.Encoding.UTF8; // для отображения кирилицы в консоли
@@ -45,5 +46,9 @@ void InputDataAndCheckingForNonParallel() //  ввод данных и пров�
     }
     else IntersectionStriteLine (k1, k2, b1 ,b2);
 }
-
+Console.WriteLine(@"Найдём точку пересечения двух прямых ,
+заданных уравнениями:
+y = k1 * x + b1
+y = k2 * x + b2
+Зададим коэффициенты :");
 InputDataAndCheckingForNonParallel(); 
