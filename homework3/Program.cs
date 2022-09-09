@@ -38,9 +38,10 @@ void Copy(int [,] array,int [,] array2)
 
 int [,] massive = new int [10,10];
 int [,] massive2 = new int [10,10];
-
+Console.WriteLine("Создаём двумерный массив 10 на 10");
 Fill(massive); // заполняем двумерный массив
 Print(massive); // печатаем первый массив
 Console.WriteLine();
 Copy(massive,massive2);// делаем копию
+Console.WriteLine("Теперь распечатываем копию нашего массива");
 Print(massive2);//печатаем второй массив
