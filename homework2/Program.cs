@@ -12,9 +12,9 @@ Console.OutputEncoding=System.Text.Encoding.UTF8;                       //для
 
 string [] InputData()
 {
-    Console.WriteLine("Введите как минимум три пары координат вершин фиуры 2D , пользуясь крулыми скобками ");
-    Console.WriteLine("Например: (2,3)(-4,6)(7.4,3) ");
-    Console.WriteLine("Для ввода десятичного числа используйте точку \".\" ");
+    Console.WriteLine(@"Введите как минимум три пары координат вершин фиуры 2D , пользуясь крулыми скобками
+Например: (2,3)(-4,6)(7.4,3)
+Для ввода десятичного числа используйте точку '.' ");
     string str = Console.ReadLine() ?? "";
     char[] delimiterChars = { ' ', ',', '\t' , '(', ')','/'};
     string [] str2 = str.Split(delimiterChars,StringSplitOptions.RemoveEmptyEntries); // удаление символов (строка 19) из массива str2
